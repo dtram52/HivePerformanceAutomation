@@ -1,7 +1,7 @@
 #!/bin/bash
 
-CONNECTION_STRING=jdbc:hive2://localhost:10001
-CLUSTER_SSH_PASSWORD=H@doop1234
+CONNECTION_STRING=jdbc:hive2://`hostname -f`:10001/;transportMode=http
+CLUSTER_SSH_PASSWORD=Deploy@321
 CURRENT_DIR=$(cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 WORKLOAD_HOME=${CURRENT_DIR}/../workload/${WORKLOAD}
 OUTPUT_PATH=${CURRENT_DIR}/../output

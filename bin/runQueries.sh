@@ -51,7 +51,7 @@ do
     echo "$EXEC_TIMES_HEADER" > ${QUERY_TIMES_FILE}
     echo "$EXEC_TIMES_HEADER" > ${PLAN_TIMES_FILE}
 
-    for file in ${WORKLOAD_HOME}/queries/*.{sql,hql}
+    for file in ${WORKLOAD_HOME}/queries/*.sql
     do
         name=${file##*/}
         basename=${name%.sql}
