@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CONNECTION_STRING=jdbc:hive2://`hostname -f`:10001/;transportMode=http
+CONNECTION_STRING=jdbc:hive2://localhost:10001
 CLUSTER_SSH_PASSWORD=Deploy@321
 CURRENT_DIR=$(cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 WORKLOAD_HOME=${CURRENT_DIR}/../workload/${WORKLOAD}
